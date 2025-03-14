@@ -1,0 +1,83 @@
+:root {
+    --primary-color: #FFB74D;
+    --secondary-color: #FFC107;
+    --bg-color: #FFF8E1;
+    --grid-color: #ffffff;
+    --text-color: #5D4037;
+    --button-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Microsoft YaHei', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+.container {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 1rem;
+}
+
+.header {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 1rem 2rem;
+    border-radius: 20px;
+    box-shadow: var(--button-shadow);
+    backdrop-filter: blur(5px);
+    margin-bottom: 2rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: var(--text-color);
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2rem;
+}
+
+.game-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-bottom: 2rem;
+}
+
+.cell {
+    aspect-ratio: 1;
+    background: var(--grid-color);
+    border: 3px solid var(--primary-color);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: all 0.3s;
+    box-shadow: var(--button-shadow);
+}
+
+button {
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 25px;
+    background: var(--primary-color);
+    color: white;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: bold;
+    transition: all 0.3s;
+    box-shadow: var(--button-shadow);
+}
+
+#skipBtn {
+    width: 100%;
+    background: var(--secondary-color);
+    margin-bottom: 1.5rem;
+    font-size: 1.2rem;
+    padding: 1.2rem;
+}

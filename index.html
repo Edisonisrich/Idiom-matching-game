@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-YOUR_PUBLISHER_ID"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>成語連線遊戲</title>
+    <link href="style.css" rel="stylesheet">
+    <script type="importmap">
+    {
+        "imports": {
+            "confetti": "https://cdn.skypack.dev/canvas-confetti",
+            "share": "https://cdn.skypack.dev/sharer.js"
+        }
+    }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="ad-container-top">
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-YOUR_PUBLISHER_ID"
+                 data-ad-slot="YOUR_AD_SLOT_ID"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+            <script>
+                 (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+        <div class="header">
+            <div class="score">分數: <span id="score">1000</span></div>
+            <div class="timer">時間: <span id="timer">60</span></div>
+        </div>
+        
+        <div class="game-grid"></div>
+        
+        <button id="skipBtn">跳過 (-30分)</button>
+        
+        <div class="controls">
+            <button id="muteBtn">🔊</button>
+            <button id="rulesBtn">規則</button>
+            <button id="endGameBtn">結束遊戲</button>
+        </div>
+        <div class="ad-container-bottom">
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-YOUR_PUBLISHER_ID"
+                 data-ad-slot="YOUR_AD_SLOT_ID"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+            <script>
+                 (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+    </div>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <h2 id="modal-title"></h2>
+            <p id="modal-text"></p>
+            <div id="modal-buttons"></div>
+        </div>
+    </div>
+
+    <script type="module" src="game.js"></script>
+</body>
+</html>
